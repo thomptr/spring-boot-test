@@ -1,0 +1,18 @@
+# See https://cloud.google.com/appengine/docs/flexible/java/reference/app-yaml
+runtime: custom
+env: flex
+env_variables:
+  "SPRING_CLOUD_GCP_PROJECT_ID": "?"
+#  "SPRING_PROFILES_ACTIVE": "dev"
+#network:
+#  name:
+#  subnetwork_name:
+automatic_scaling:
+  min_num_instances: 1
+#resources:
+#  cpu: 2
+#  memory_gb: 11.6  #2cpu * 6GB - .4 (overhead requirement)
+#  disk_size_gb: 10
+handlers:
+- url: /.*
+  script: this field is required, but ignored

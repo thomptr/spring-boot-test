@@ -1,0 +1,13 @@
+substitutions:
+  _IMAGE_NAME: ppp-api
+  _GCS_CACHE_BUCKET: ppp-api-gradle-cache
+
+steps:
+- name: gcr.io/cloud-builders/gradle
+  id: build
+  args: ['clean', 'build', 'copyJarToBin']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', './src/main/appengine/app.yml']
+  timeout: '600s'
+  waitFor:
+    - build
