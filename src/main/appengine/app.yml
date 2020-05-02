@@ -2,7 +2,7 @@
 runtime: custom
 env: flex
 env_variables:
-  "SPRING_CLOUD_GCP_PROJECT_ID": "?"
+  "SPRING_CLOUD_GCP_PROJECT_ID": "boreal-atom-276000"
 #  "SPRING_PROFILES_ACTIVE": "dev"
 #network:
 #  name:
