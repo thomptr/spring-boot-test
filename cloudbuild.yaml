@@ -1,6 +1,6 @@
-substitutions:
-  _IMAGE_NAME: ppp-api
-  _GCS_CACHE_BUCKET: ppp-api-gradle-cache
+#substitutions:
+#  _IMAGE_NAME: ppp-api
+#  _GCS_CACHE_BUCKET: ppp-api-gradle-cache
 
 steps:
 - name: gcr.io/cloud-builders/gradle
